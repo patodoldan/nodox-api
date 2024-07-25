@@ -68,12 +68,12 @@ Parámetros aceptados:
 
 + **data** *- STRING* : Nombre de la tabla a la que se quiere acceder. Es el único parámetro obligatorio.
 ```javascript
-data = 'usuarios' || 'audiencias' || 'encuestas' || 'respuestas' || 'productos' || ...
+data = 'usuarios' || 'audiencias' || 'encuestas' || 'respuestas' || 'productos' || 'encuesta-respondidas' || unidad_de_negocios || sucursals || ...
 ```
 
 + **creacion** *- STRING* : Trae datos creados en la fecha enviada. No compatible con "desde" o "hasta". 
 ```javascript
-crecion = '2022-05-12'
+craecion = '2022-05-12'
 ```
 
 + **desde** *- STRING* : Trae datos desde la fecha enviada. No compatible con "creación".
@@ -98,8 +98,8 @@ limite = '10'
 
 + **orden** *- STRING* : Órden de los datos. Se conforma por el nombre del campo y "ASC" para órden ascendente, o DESC para órden descendente. 
 ```javascript
-'email=ASC' // ordena por email alfabéticamente de la A  a la Z 
-'id=DESC' // ordena por número de ID de manera descendente
+'email:ASC' // ordena por email alfabéticamente de la A  a la Z 
+'id:DESC' // ordena por número de ID de manera descendente
 ```
 
 + **todos** *- BOOLEAN* : Al enviar true, trae también los datos eliminados.  
